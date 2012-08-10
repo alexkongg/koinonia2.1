@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{#gpvideo_dlg.dialog_title}</title>
+	<script type="text/javascript" src="../../../wp-includes/js/tinymce/tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="../../../wp-includes/js/tinymce/utils/mctabs.js"></script>
+	<script type="text/javascript" src="../../../wp-includes/js/tinymce/utils/form_utils.js"></script>
+	<script type="text/javascript" src="../../../wp-includes/js/tinymce/utils/validate.js"></script>
+	<script type="text/javascript" src="../../../wp-includes/js/tinymce/utils/editable_selects.js"></script>
+	<script type="text/javascript" src="js/gpvideo.js"></script>
+	<link href="css/advvideo.css" rel="stylesheet" type="text/css" />
+</head>
+<body id="gpvideo" style="display: none">
+    <form onsubmit="GPVideoDialog.insert();return false;" action="#"> 
+		<div class="panel_wrapper">
+			<div id="general_panel" class="panel current">
+				<fieldset>
+						<legend>{#gpvideo_dlg.general}</legend>
+
+						<table class="properties">
+							<tr>
+								<td class="column1"><label id="vimeoidlabel" for="gpvimeoid">{#gpvideo_dlg.vimeoid}</label></td> 
+								<td colspan="2"><input id="title" name="gpvimeoid" type="text" value="" /></td>
+							</tr>
+							<tr>
+								<td class="column1"><label id="widthlabel" for="gpwidth">{#gpvideo_dlg.width}</label></td> 
+								<td colspan="2"><input id="title" name="gpwidth" type="text" value="" /></td>
+							</tr>
+							<tr>
+								<td class="column1"><label id="heightlabel" for="gpheight">{#gpvideo_dlg.height}</label></td> 
+								<td colspan="2"><input id="title" name="gpheight" type="text" value="" /></td>
+							</tr>
+						</table>
+				</fieldset>
+			</div>
+		</div>
+
+		<div class="mceActionPanel">
+			<input type="submit" id="insert" name="insert" value="{#insert}" />
+			<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+		</div>
+    </form>
+</body> 
+</html> 

@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'LeagueGothic';
+    src: url('fonts/league_gothic-webfont.eot');
+    src: url('fonts/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/league_gothic-webfont.woff') format('woff'),
+         url('fonts/league_gothic-webfont.ttf') format('truetype'),
+         url('fonts/league_gothic-webfont.svg#LeagueGothic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+
+body {
+	font: 14px/18px 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+}
+
+a:focus {
+	outline: 1px dotted;
+}
+
+hr {
+	border: 0 #ccc solid;
+	border-top-width: 1px;
+	clear: both;
+	height: 0;
+}
+
+/* `Headings
+----------------------------------------------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6, .post-title , .post-icon, header .nav, .tag, .button { 
+    font-family: LeagueGothic, Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif; 
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-weight: normal;
+    line-height: 0.8;
+}
+h1 { font-size: 60px; }
+h2, .post-title { font-size: 30px; }
+h3 { font-size: 30px; }
+h4, .post-icon { font-size: 21px; }
+h5 { font-size: 18px; }
+h6 { font-size: 12px; }
+
+/* `Spacing
+----------------------------------------------------------------------------------------------------*/
+
+ol {
+	list-style: decimal;
+}
+
+ul {
+	list-style: disc;
+}
+
+li {
+	margin-left: 30px;
+}
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+.post-title,
+.post-icon {
+	margin-bottom: 20px;
+}
