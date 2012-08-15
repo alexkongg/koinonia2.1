@@ -21,7 +21,7 @@
  
     				<h5>By <?php the_author_meta('first_name') ?> <?php the_author_meta('last_name') ?> on <?php the_time('M j, Y') ?> | Filed under <? echo $tags; ?> 
 
-<?
+<?php
 require('disqus_vals.php');
 $disqus = new Disqus($disqus_vars['user_api_key'], $disqus_vars['forum_api_key']);
 $my_url = get_permalink();
@@ -36,7 +36,7 @@ if ($thread != "" ) {
 	}
 }
 ?>
-					<? if ($num_comments > 0) {
+					<?php if ($num_comments > 0) {
 						echo " | <a href='#disqus_thread'>".$num_comments . " comment"; 
 						if ($num_comments != 1) { echo "s"; }
 						echo "</a>";
